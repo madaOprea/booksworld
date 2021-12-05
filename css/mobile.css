@@ -1,0 +1,108 @@
+#what .items {
+  display: block;
+  padding: 1rem;
+}
+
+/* Align icon to left */
+#what .items .item {
+  display: flex;
+  text-align: left;
+}
+
+/* Position icon */
+#what .items .item i {
+  margin-right: 1.3rem;
+  align-self: center;
+  margin-bottom: 0;
+}
+
+/* Smartphones */
+@media(max-width: 500px) {
+  #navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #navbar .logo {
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
+
+  #navbar ul {
+    padding: 0.5rem;
+  }
+
+  #showcase .showcase-content {
+    top: 110px;
+  }
+
+  #who {
+    display: block;
+  }
+
+  #who .who-img {
+    display: none;
+  }
+
+  #clients .items img {
+    width: 80%;
+  }
+
+  #clients .items div:last-child {
+    display: none;
+  }
+
+  #contact {
+    flex-direction: column;
+  }
+
+  #contact .map {
+    height: 200px;
+    border-top: 4px solid #333;
+  }
+}
+
+@media(max-height: 568px) {
+  #showcase .showcase-content {
+    margin-top: -2rem;
+    top: 140px;
+  }
+
+  .l-heading {
+    font-size: 3rem;
+  }
+
+  .quote {
+    font-size: 1rem;
+    text-align: right;
+  }
+
+  .author {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.877);
+  }
+}
+
+/* Section: social media buttons */
+.social-container {
+  width: 200px;
+  margin: 20px auto;
+  text-align: center;
+  display: inline;
+  color: white;
+}
+
+.fa-facebook{
+  background: #3B5998;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
