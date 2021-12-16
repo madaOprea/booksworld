@@ -9,6 +9,8 @@
 body {
   font-family: 'Roboto', sans-serif;
   line-height: 1.4;
+  -webkit-user-select: none;
+  user-select: none;
 }
 
 a {
@@ -289,3 +291,75 @@ p {
   color: white;
 }
 
+/* Section: reviews */
+#reviews {
+  background-image: url('../img/showcase.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  color: #fff;
+  display: flex;
+  align-items: TOP;
+  justify-content: center;
+  position: relative;
+}
+#reviews:after {
+  content: "";
+  top: 0 ;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  background-color: rgba(0,0,0,0.4);
+  z-index: 1;
+}
+
+#reviews .reviews-content {
+  position: relative;
+  z-index: 2;
+  flex: 1;
+  margin: 10% 20px 20px 20px;
+}
+
+#review-articles .reviews-container > *:first-child,
+#review-articles .reviews-container > *:last-child {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+  grid-column: 1 / span 2;
+  align-items: center;
+}
+
+#articles .articles-container {
+  background: #333 url('../img/books.jpg') no-repeat center center/cover;
+  padding-left: 15px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+}
+
+#articles .articles-container > *:first-child,
+#articles .articles-container > *:last-child {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+  align-items: center;
+  grid-column: 1 / span 2;
+}
+
+#articles .articles-container > *:last-child {
+  grid-column: 2 / span 2;
+}
+
+#article .meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #eee;
+  padding: 0.5rem;
+}
+
+#article .meta .category {
+  margin-top: 0.4rem;
+}
